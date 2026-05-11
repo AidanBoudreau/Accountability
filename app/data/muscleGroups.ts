@@ -1,0 +1,40 @@
+import type { MuscleGroup } from '../types'
+
+export const MUSCLE_LABELS: Record<MuscleGroup, string> = {
+  'chest-upper':       'Upper Chest',
+  'chest-mid':         'Mid Chest',
+  'chest-lower':       'Lower Chest',
+  'shoulders-front':   'Front Delt',
+  'shoulders-side':    'Side Delt',
+  'shoulders-rear':    'Rear Delt',
+  'triceps-long':      'Tricep Long Head',
+  'triceps-lateral':   'Tricep Lateral',
+  'triceps-medial':    'Tricep Medial',
+  'biceps-long':       'Bicep Long Head',
+  'biceps-short':      'Bicep Short Head',
+  'biceps-brachialis': 'Brachialis',
+  'back-lats':         'Lats',
+  'back-mid':          'Mid Back',
+  'back-lower':        'Lower Back',
+  'back-upper':        'Upper Traps',
+  'legs-quads':        'Quads',
+  'legs-hamstrings':   'Hamstrings',
+  'legs-glutes':       'Glutes',
+  'legs-calves':       'Calves',
+  'legs-adductors':    'Adductors',
+  'core-abs':          'Abs',
+  'core-obliques':     'Obliques',
+  'core-lower':        'Lower Abs',
+  'forearms':          'Forearms',
+}
+
+export const MUSCLE_GROUP_SECTIONS: { label: string; groups: MuscleGroup[] }[] = [
+  { label: 'Chest',     groups: ['chest-upper', 'chest-mid', 'chest-lower'] },
+  { label: 'Shoulders', groups: ['shoulders-front', 'shoulders-side', 'shoulders-rear'] },
+  { label: 'Triceps',   groups: ['triceps-long', 'triceps-lateral', 'triceps-medial'] },
+  { label: 'Biceps',    groups: ['biceps-long', 'biceps-short', 'biceps-brachialis'] },
+  { label: 'Back',      groups: ['back-lats', 'back-mid', 'back-lower', 'back-upper'] },
+  { label: 'Legs',      groups: ['legs-quads', 'legs-hamstrings', 'legs-glutes', 'legs-calves', 'legs-adductors'] },
+  { label: 'Core',      groups: ['core-abs', 'core-obliques', 'core-lower'] },
+  { label: 'Other',     groups: ['forearms'] },
+]
